@@ -1,0 +1,55 @@
+<!-- Copyright 2020 Google LLC. All Rights Reserved.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+    http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+==============================================================================-->
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0, user-scalable=no">
+
+<head>
+  <script src="/socket.io/socket.io.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="header">
+    <div>
+      <h1>Sign Language Translator</h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="container-toggle"> 
+      <div class="toggleWrapper">
+        <input type="checkbox" name="toggle1" class="mobileToggle" id="toggle1" onClick="toggleDemoMode()" checked>
+        <label for="toggle1"></label>
+      </div>
+      <div class="toggle-text">
+        <p>Demo mode</p>
+      </div>
+    </div>
+    <div id="info-btn">
+      <img onclick="show()" src="https://img.icons8.com/ios/50/000000/ok-hand--v1.png"/>
+      <div class="img-container">
+        <img id="image" src="sign_alphabet.png"/>
+      </div>
+    </div>
+  </div>
+  <div class="container-main">
+    <div class="translator-container">
+      <div id="letter">-</div>
+      <div id="word"></div>
+    </div>
+  </div>
+  <div class="footer">
+    <h5>Advanced Interface Design - CSIM 2021/2022</h5>
+    <h6>Jorge Martínez & Paula Balcells</h6>
+  </div>
+  <script src="./index.js"></script>
+</body>
